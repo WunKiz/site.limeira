@@ -13,7 +13,7 @@ body {
     font-family: Roboto;
 }
 
-nav,article,main{
+nav,article,main, section{
     width: 1024px;
     margin: 0px auto; 
 }
@@ -52,7 +52,7 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: var(--cordosite);
+    background-color: #222;
     color: white;
     i {
         color: white;
@@ -68,12 +68,14 @@ iframe {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
+    padding: 10px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
+    padding: 10px;
 }
 
 .historia {
@@ -96,7 +98,7 @@ h2 {
     width: 100%;
     th{
         background-color: #ccc;
-        color: var(--branco);
+        color: black ;
         padding: 8px;
         text-align: start;
     }
@@ -113,10 +115,60 @@ h2 {
 
 }
 
-h1 {
-    text-align: left;
-}
-
 .imagenstops img{
     width: 100%;
+}
+
+.principal{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .menores{
+        width: 32%;
+        border: 1px solid #444;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 8px;
+        img{
+            border-radius: 8px 8px 0px 0px;
+            width: 100%;
+        } 
+        p {
+            font-weight: 300px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.dados-populacao{
+    p{
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+.mapas{
+    iframe{
+        padding: 20px;
+        width: 100%; 
+        height: 450px;
+    }
+}
+
+.prefeitos{
+    li{
+        font-size: x-large;
+        padding-bottom: 5px;
+        text-align: center;
+    }
 }
